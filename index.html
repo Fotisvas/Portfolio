@@ -157,23 +157,26 @@
     <div class="container">
         <h2>Contact</h2>
 
-        <form style="max-width:720px; margin:0 auto; text-align:left;">
+        <form action="https://formspree.io/f/mqeddnrg" method="POST" style="max-width:720px; margin:0 auto; text-align:left;">
 
             <div style="margin-bottom: 12px;">
                 <label>Name</label>   
-                <input type="text" placeholder="Your name" required>
+                <input type="text" name="name" placeholder="Your name" required>
             </div>
 
             <div style="margin-bottom: 12px;">
                 <label>Email</label>
-                 <input type="email" placeholder="Your email" required>
+                <input type="email" name="email" placeholder="Your email" required>
             </div>
             
              <div style="margin-bottom: 12px;">
                 <label>Message</label>
-                 <textarea rows="5" placeholder="Write your message here..." required></textarea>
+                <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                
                 
             </div>
+
+            <input type="hidden" name="_subject" value="New message from portfolio">
 
             <button type="submit">Send Message</button>
 
